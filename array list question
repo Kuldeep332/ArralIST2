@@ -1,0 +1,41 @@
+kuldeep;
+
+import java.util.Scanner;
+
+// to copy element
+public class ArrayQustion {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" enter your number you want to copy");
+        int a=sc.nextInt();
+        int []arr=new int[a];
+        int[]brr=new int[arr.length];
+        System.out.println(" enter your element ");
+        for(int i=0; i<arr.length; i++)
+        {
+          //  System.out.println(" enter your element ");
+            arr[i]=sc.nextInt();
+            brr[i]=arr[i];
+        }
+        System.out.println(" before element ");
+        for(int i=0; i<arr.length; i++)
+        {
+            System.out.print(arr[i]+" ");
+         //   arr[i]=sc.nextInt();
+         //   brr[i]=arr[i];
+        }
+        System.out.println();
+
+        System.out.println(" after copy element");
+        for(int i=0; i<brr.length; i++)
+        {
+           System.out.print(brr[i]+" ");
+            //arr[i]=sc.nextInt();
+          //  brr[i]=arr[i];
+        }
+
+
+
+
+    }
+}
